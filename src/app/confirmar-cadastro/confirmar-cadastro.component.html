@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 justify-content-center">
+      <div class="content-confirmed" *ngIf="confirmed;else notConfirmed">
+        <i class="large material-icons check">check</i>
+        <h2><strong>Parabéns!</strong></h2>
+        <h3>Sua conta foi confirmada</h3>
+        <p class="confirmation-msg">
+          Agora você faz parte do trailinglab e pode começar a utilizar os recursos oferecidos.
+          <br>
+          Faça o login na aplicação clicando no botão abaixo.
+        </p>
+      </div>
+      <div class="card" style="width: 20rem;" (click)="voltarLogin()" *ngIf="confirmed && cpde !== -1">
+        <div class="card-body">
+          <p class="card-text">voltar para o login</p>
+        </div>
+      </div>
+      
+      <ng-template #notConfirmed>
+        <div class="content-confirmed">
+          <i class="large material-icons not-check">do_not_disturb</i>
+          <h2><strong>Temos um problema!</strong></h2>
+          <h3>{{ msg }}</h3>
+          <p class="confirmation-msg">
+            Infelizmente não podemos ativar sua conta neste momento.
+            <br>
+            Faça uma nova solicitação clicando no botão abaixo.
+          </p>
+        </div>
+        <div class="card" style="width: 20rem;" (click)="reenviarConfirmacao()">
+          <div class="card-body">
+            <p class="card-text">reenviar confirmação de conta</p>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.card {
+    margin: 0 auto 0;
+}
+.card-title {
+    text-align: center;
+    font-weight: 700;
+    color: #004751;
+}
+p.sub-card-title {
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.6;
+}
+p.card-text {
+    text-align: center;
+}
+.icon-lock {
+    text-align: center;
+    margin-top: 50px;
+}
+.icon-lock i.large.material-icons {
+    font-size: 90px;
+}

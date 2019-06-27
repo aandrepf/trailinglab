@@ -1,0 +1,8 @@
+.card-title {
+    background-image: url("./../../../assets/trailinglib.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    height: 80px;
+    width: 100%;
+}

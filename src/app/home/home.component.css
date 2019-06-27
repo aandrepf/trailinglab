@@ -1,0 +1,15 @@
+.navbar {
+    height: 77px;
+    padding: 20px 40px 26px;
+    width: 100%;
+    border-bottom: solid 1px #E6E6E6;
+}
+
+.logo {
+    background-image: url('./../../assets/trailinglib.png');
+    width: 129px;
+    height: 36px;
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

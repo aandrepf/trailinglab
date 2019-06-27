@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 justify-content-center">
+      <div class="icon-lock">
+          <i class="large material-icons">lock_outline</i>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <div class="card-title">Problemas para entrar?</div>
+          <p class="sub-card-title">Insira seu email e enviaremos a você um link para resetar sua senha.</p>
+          <form [formGroup]="formulario" (ngSubmit)="resetar()">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="E-mail"
+                formControlName="email"
+              >
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm btn-block" [disabled]="formulario.invalid">resetar senha</button>
+          </form>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;margin: -1px auto 0;">
+        <div class="card-body">
+          <p class="card-text">
+            voltar para o <a class="card-link" (click)="voltaLogin()">login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+a { color: #004751!important; }
+a:hover { color: #006360!important;cursor: pointer; }
+.btn-primary {
+    background-color: #004751!important;
+    border-color: #004751!important;
+}
+.btn-primary:hover {
+    cursor: pointer;
+}
+.ngx-toastr {
+    border-radius: 0!important;
+    width: 100%!important;
+}
