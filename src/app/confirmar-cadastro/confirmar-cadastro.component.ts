@@ -26,7 +26,7 @@ export class ConfirmarCadastroComponent implements OnInit {
   }
 
   public validarKey(chave: string): void {
-    this._user.userSubscription(this.key)
+    this._user.userSubscription(chave)
     .then((retorno: UserTrader) => {
       console.log('ret subs:', retorno);
       if (retorno.retCode !== 0) {

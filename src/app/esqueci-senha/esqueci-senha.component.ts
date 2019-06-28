@@ -38,6 +38,7 @@ export class EsqueciSenhaComponent implements OnInit {
       } else {
         this.toastr.success(recoverMsg, 'Resetar senha');
       }
+      this.formulario.reset();
     })
   }
 
